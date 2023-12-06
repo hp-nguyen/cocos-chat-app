@@ -165,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 255.47749411640942
+      "z": 307.4390183434757
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -2411,8 +2411,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "Username...",
-    "_N$string": "Username...",
+    "_string": "Your name ...",
+    "_N$string": "Your name ...",
     "_fontSize": 20,
     "_lineHeight": 25,
     "_enableWrapText": false,
@@ -2480,7 +2480,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 226.77,
+      "width": 180.08,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -2526,8 +2526,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Insert your username",
-    "_N$string": "Insert your username",
+    "_string": "Insert your name",
+    "_N$string": "Insert your name",
     "_fontSize": 24,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -2786,8 +2786,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Play",
-    "_N$string": "Play",
+    "_string": "JOIN",
+    "_N$string": "JOIN",
     "_fontSize": 24,
     "_lineHeight": 40,
     "_enableWrapText": false,

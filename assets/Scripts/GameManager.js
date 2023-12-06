@@ -1,4 +1,3 @@
-const randomWords = require('random-words');
 cc.Class({
   extends: cc.Component,
 
@@ -18,7 +17,7 @@ cc.Class({
 
   onLoad() {
     this.isPlaying = true;
-    this.words = randomWords(24);
+    this.words = ['a', 'b', 'c'];
     this.paragraph = this.words.join(' ');
     this.wordLabels = [];
     for (let word of this.words) {
