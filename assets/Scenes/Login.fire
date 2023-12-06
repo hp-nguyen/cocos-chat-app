@@ -165,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 304.8409421321224
+      "z": 219.104427157463
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -296,7 +296,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "a0f71aa6-1340-4e62-a5dc-8fe5f5c89b9c"
+      "__uuid__": "ed63e763-38d9-4e30-bd7e-37a3bfbba8bd"
     },
     "_type": 0,
     "_sizeMode": 0,

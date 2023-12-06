@@ -10,9 +10,9 @@ cc.Class({
 
   onLoad() {
     this.newMessageData = {};
+    this.inputChat.focus();
   },
 
-  start() {},
   generateMessage(data) {
     const newMessage = cc.instantiate(this.messagePrefab);
     const usernameLabel = newMessage.getChildByName('Username').getComponent(cc.Label);
@@ -26,18 +26,20 @@ cc.Class({
     this.newMessageData.username = 'Tran Le The Nam';
     this.newMessageData.content = this.inputChat.string;
     this.generateMessage(this.newMessageData);
-  },
-  onEditEnd() {
-    this.sendMessage();
     this.inputChat.string = '';
-    this.inputChat.focus();
     this.chatFrame.scrollToBottom(0.1);
+    this.inputChat.focus();
+  },
+  onEditReturn() {
+    this.sendMessage();
+    setTimeout(() => this.inputChat.focus(), 1);
   },
   validateInput() {
     if (this.inputChat.string) {
       this.sendMessageBtn.interactable = true;
-    } else {
-      this.sendMessageBtn.interactable = false;
+      return true;
     }
+    this.sendMessageBtn.interactable = false;
+    return false;
   },
 });
