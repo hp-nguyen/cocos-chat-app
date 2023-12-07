@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "86e1b655-7940-4889-bc2c-1765fc29ebc1",
+  "uuid": "1c27795f-3a35-4bb1-a426-91ec60536596",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -9,10 +9,10 @@
   "packable": true,
   "platformSettings": {},
   "subMetas": {
-    "91657": {
+    "Cool_Game_Button_03": {
       "ver": "1.0.4",
-      "uuid": "a0f71aa6-1340-4e62-a5dc-8fe5f5c89b9c",
-      "rawTextureUuid": "86e1b655-7940-4889-bc2c-1765fc29ebc1",
+      "uuid": "c518826a-1989-4f79-a997-450d6969795b",
+      "rawTextureUuid": "1c27795f-3a35-4bb1-a426-91ec60536596",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -20,10 +20,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 5000,
-      "height": 3334,
-      "rawWidth": 5000,
-      "rawHeight": 3334,
+      "width": 204,
+      "height": 73,
+      "rawWidth": 204,
+      "rawHeight": 73,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
