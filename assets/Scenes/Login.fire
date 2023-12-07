@@ -165,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 219.104427157463
+      "z": 304.8409421321224
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -2968,7 +2968,7 @@
       "width": 960,
       "height": 640
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true,
     "_id": "302jvKb0FFDJTVjyhwL2kG"
   },
@@ -2989,6 +2989,6 @@
     "submitBtn": {
       "__id__": 79
     },
-    "_id": "23w2AC/HhB0KsfYrP9MQBJ"
+    "_id": "8fUP5NFsZOUYn8lKusXnCx"
   }
 ]

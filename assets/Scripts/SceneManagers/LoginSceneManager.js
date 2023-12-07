@@ -25,7 +25,7 @@ cc.Class({
 
   onPlay() {
     const data = this.userData;
-    cc.director.loadScene('GamePlay', function () {
+    cc.director.loadScene('Chat', function () {
       cc.director.getScene().emit('userData', data);
     });
   },
