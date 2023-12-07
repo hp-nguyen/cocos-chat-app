@@ -1,15 +1,14 @@
 cc.Class({
   extends: cc.Component,
-
+  properties: {
+    chatManager: cc.Node,
+  },
   onLoad() {
-    this.username = '';
     cc.director.getScene().on('userData', this.onReceiveUserData, this);
   },
 
   onReceiveUserData(data) {
-    this.username = data.username;
-    // console.log(data)
-    // console.log(this.username)
+    this.chatManager.getComponent('ChatManager').newMessageData.username = data.username;
   },
 
   onDestroy() {

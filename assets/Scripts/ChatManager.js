@@ -4,7 +4,6 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    mainCanvas: cc.Canvas,
     sendingMessagePrefab: cc.Prefab,
     receivingMessagePrefab: cc.Prefab,
     chatFrame: cc.ScrollView,
@@ -14,10 +13,6 @@ cc.Class({
 
   onLoad() {
     this.newMessageData = {};
-    const username = this.mainCanvas.getComponent('ChatSceneManager').username;
-    console.log(username)
-    this.newMessageData.username = username;
-    console.log(this.newMessageData);
     this.inputChat.focus();
 
     this.socket = io('http://localhost:3000');
@@ -46,6 +41,7 @@ cc.Class({
     if (!this.inputChat.string) return;
     this.newMessageData.content = this.inputChat.string;
     this.renderMessage('send', this.newMessageData);
+    console.log(this.newMessageData);
     this.socket.emit('sendMessage', this.newMessageData);
     this.inputChat.string = '';
     this.chatFrame.scrollToBottom(0.1);
