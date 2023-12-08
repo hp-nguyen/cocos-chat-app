@@ -9,19 +9,19 @@ cc.Class({
     chatFrame: cc.ScrollView,
     inputChat: cc.EditBox,
     sendMessageBtn: cc.Button,
+    avatarAtlas: cc.SpriteAtlas,
   },
 
   onLoad() {
     this.newMessageData = {};
     this.inputChat.focus();
 
-    this.socket = io('http://localhost:3000');
+    this.socket = io('https://server-cocos-chat-app.onrender.com/');
     this.socket.on('connect', () => {
       cc.log('Connected to server');
     });
 
     this.socket.on('newMessage', data => {
-      console.log(data);
       this.renderMessage('recieve', data);
     });
   },
@@ -31,17 +31,19 @@ cc.Class({
       type === 'send'
         ? cc.instantiate(this.sendingMessagePrefab)
         : cc.instantiate(this.receivingMessagePrefab);
-    const usernameLabel = newMessage.getChildByName('Username').getComponent(cc.Label);
-    const contentLabel = newMessage.getChildByName('Content').getComponent(cc.Label);
+    const bubbleNode = newMessage.getChildByName('Bubble');
+    const avatarSprite = newMessage.getChildByName('Avatar').getComponent(cc.Sprite);
+    const usernameLabel = bubbleNode.getChildByName('Username').getComponent(cc.Label);
+    const contentLabel = bubbleNode.getChildByName('Content').getComponent(cc.Label);
     usernameLabel.string = data.username;
     contentLabel.string = data.content;
+    this.setAvatar(avatarSprite, data.avatarName);
     this.chatFrame.content.addChild(newMessage);
   },
   onSendMessage() {
     if (!this.inputChat.string) return;
     this.newMessageData.content = this.inputChat.string;
     this.renderMessage('send', this.newMessageData);
-    console.log(this.newMessageData);
     this.socket.emit('sendMessage', this.newMessageData);
     this.inputChat.string = '';
     this.chatFrame.scrollToBottom(0.1);
@@ -58,5 +60,14 @@ cc.Class({
     }
     this.sendMessageBtn.interactable = false;
     return false;
+  },
+  setAvatar(avatarSprite, avatarName) {
+    const avatarFrames = this.avatarAtlas.getSpriteFrames();
+    for (let frame of avatarFrames) {
+      if (avatarName === frame.name) {
+        avatarSprite.spriteFrame = frame;
+        return;
+      }
+    }
   },
 });

@@ -8,7 +8,9 @@ cc.Class({
   },
 
   onLoad() {
-    this.userData = {};
+    this.userData = {
+      avatarName: 'chibi-avatars-removebg_05',
+    };
   },
 
   start() {},
@@ -20,7 +22,7 @@ cc.Class({
     } else this.submitBtn.interactable = false;
   },
   onPickAvatar() {
-    this.userData.avatar = this.avatarImg.spriteFrame;
+    this.userData.avatarName = this.avatarImg.spriteFrame.name;
   },
 
   onPlay() {

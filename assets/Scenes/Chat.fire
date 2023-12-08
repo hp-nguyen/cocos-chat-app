@@ -287,10 +287,10 @@
     },
     "_enabled": true,
     "sendingMessagePrefab": {
-      "__uuid__": "771d9fb8-e7a4-4f98-ba7a-23400f262b77"
+      "__uuid__": "6c6d6274-e2df-4858-a5fd-628e88d63fcb"
     },
     "receivingMessagePrefab": {
-      "__uuid__": "a14570a8-3c50-4cbc-bfd3-75e292902713"
+      "__uuid__": "97e9e344-719e-423e-92de-e298991437cf"
     },
     "chatFrame": {
       "__id__": 7
@@ -300,6 +300,9 @@
     },
     "sendMessageBtn": {
       "__id__": 34
+    },
+    "avatarAtlas": {
+      "__uuid__": "e58d3365-4c8b-4e72-bd3e-caacba85ee8d"
     },
     "_id": "6aWDCj2ZtLHLo2+p5kI8cU"
   },
@@ -357,7 +360,7 @@
       }
     ],
     "_prefab": null,
-    "_opacity": 225,
+    "_opacity": 220,
     "_color": {
       "__type__": "cc.Color",
       "r": 0,
@@ -736,7 +739,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": -4.116,
-      "y": 163.317,
+      "y": 132.249,
       "z": 0
     },
     "_scale": {
@@ -1741,7 +1744,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 263.27172275046934
+      "z": 391.4434825105663
     },
     "_scale": {
       "__type__": "cc.Vec3",

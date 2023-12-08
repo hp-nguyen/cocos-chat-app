@@ -9,6 +9,7 @@ cc.Class({
 
   onReceiveUserData(data) {
     this.chatManager.getComponent('ChatManager').newMessageData.username = data.username;
+    this.chatManager.getComponent('ChatManager').newMessageData.avatarName = data.avatarName;
   },
 
   onDestroy() {
