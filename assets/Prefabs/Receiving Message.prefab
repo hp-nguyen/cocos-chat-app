@@ -48,16 +48,16 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 295,
-      "height": 70
+      "height": 52.7
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.5,
+      "y": 0.5
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -240,
+      "x": -95,
       "y": 2,
       "z": 0
     },
@@ -117,8 +117,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 20,
-      "y": 46.931,
+      "x": -127.5,
+      "y": 6.350000000000001,
       "z": 0
     },
     "_scale": {
@@ -227,13 +227,13 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 1,
-      "y": 1
+      "x": 0.5,
+      "y": 0.5
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 295,
-      "y": 69.103,
+      "x": 25,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -282,18 +282,18 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 241.32,
+      "width": 238,
       "height": 25.2
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 1
+      "x": 0.5,
+      "y": 0.5
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -240,
-      "y": 0,
+      "x": 4,
+      "y": 13.750000000000002,
       "z": 0
     },
     "_scale": {
@@ -383,18 +383,18 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 241.32,
+      "width": 238,
       "height": 31.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 1
+      "x": 0.5,
+      "y": 0.5
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -240,
-      "y": -21.2,
+      "x": 4,
+      "y": -10.599999999999998,
       "z": 0
     },
     "_scale": {
@@ -573,10 +573,10 @@
     "_layoutSize": {
       "__type__": "cc.Size",
       "width": 295,
-      "height": 70
+      "height": 52.7
     },
     "_resize": 1,
-    "_N$layoutType": 1,
+    "_N$layoutType": 3,
     "_N$padding": 0,
     "_N$cellSize": {
       "__type__": "cc.Size",
